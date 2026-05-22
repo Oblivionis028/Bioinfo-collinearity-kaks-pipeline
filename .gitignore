@@ -1,0 +1,63 @@
+# Raw biological data
+data/raw/*
+!data/raw/.gitkeep
+
+# Intermediate files
+data/intermediate/*
+!data/intermediate/.gitkeep
+
+# Results
+results/*
+!results/mcscanx/
+!results/mcscanx/.gitkeep
+!results/kaks/
+!results/kaks/.gitkeep
+
+# Sequence and annotation files
+*.fa
+*.fasta
+*.fna
+*.faa
+*.pep
+*.cds
+*.gff
+*.gff3
+*.gtf
+*.gb
+*.gbff
+
+# Alignment / database / collinearity files
+*.blast
+*.blastp
+*.dmnd
+*.collinearity
+*.tandem
+*.anchors
+*.delta
+
+# Large tables and outputs
+*.xlsx
+*.xls
+*.tsv
+*.csv
+*.html
+*.log
+*.pdf
+*.png
+*.svg
+
+# Keep example config files
+!configs/*.example.txt
+!configs/*.example.tsv
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
