@@ -1,18 +1,28 @@
-# Collinearity & Ka/Ks Pipeline Template
+<h1 align="center">🧬 共线性分析与 Ka/Ks 分析流程模板</h1>
 
-一个可重复使用的种内/种间共线性分析与 Ka/Ks 分析模板。  
-本仓库只保存流程、脚本和示例配置，不保存任何真实基因组数据、注释文件、序列文件或分析结果。
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.x-3776AB?style=flat-square&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/Shell-Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white" />
+  <img src="https://img.shields.io/badge/MCScanX-Collinearity-2E8B57?style=flat-square" />
+  <img src="https://img.shields.io/badge/Ka%2FKs-Analysis-DC143C?style=flat-square" />
+  <img src="https://img.shields.io/badge/Data-Not%20Included-lightgrey?style=flat-square" />
+  <img src="https://img.shields.io/badge/License-MIT-yellow?style=flat-square" />
+</p>
 
-## 功能
+一个可重复使用的 **种内/种间共线性分析** 与 **Ka/Ks 分析**流程模板。
 
-本模板支持：
+本仓库用于整理从 `GFF/GFF3` 注释文件和 `protein FASTA` 蛋白序列文件出发，完成 **MCScanX 共线性分析**、**目标基因筛选** 以及 **Ka/Ks 选择压力分析** 的标准流程。
 
-1. 从原始 GFF/GFF3 和 protein FASTA 生成 MCScanX 输入文件。
-2. 使用 DIAMOND 生成蛋白 all-vs-all 比对结果。
-3. 使用 MCScanX / TBtools Quick Run MCScanX Wrapper 进行共线性分析。
-4. 从 `.collinearity` 文件中筛选目标基因相关共线性基因对。
-5. 从 CDS FASTA 中提取候选基因对 CDS。
-6. 用 TBtools Simple Ka/Ks Calculator 计算 Ka/Ks。
+> 本仓库仅保存分析流程、辅助脚本和示例配置，不包含任何真实基因组数据、注释文件、序列文件或分析结果。
+
+## ✨ 功能特点
+
+- 🧬 从 GFF/GFF3 和蛋白 FASTA 生成 MCScanX 输入文件
+- ⚡ 使用 DIAMOND 进行全基因组蛋白自比对
+- 🔗 使用 MCScanX / TBtools 进行共线性分析
+- 🎯 从共线性结果中筛选目标基因相关的共线性基因对
+- 🧪 提取候选基因对的 CDS 序列用于 Ka/Ks 分析
+- 📊 根据 Ka/Ks 结果判断基因对受到的选择压力
 
 ## 仓库结构
 
