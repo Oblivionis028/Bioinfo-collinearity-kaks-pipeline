@@ -38,25 +38,9 @@
 
 ## 工作流程
 
-```text
-GFF/GFF3 + protein FASTA
-        │
-        ├── prepare_mcscanx_inputs.py
-        │        ├── clean protein FASTA
-        │        └── MCScanX 4-column GFF
-        │
-        ├── DIAMOND all-vs-all
-        │        └── BLAST tabular file
-        │
-        ├── MCScanX / TBtools-II
-        │        └── .collinearity
-        │
-        ├── filter_collinearity_targets.py
-        │        └── target-related gene pairs
-        │
-        └── CDS extraction and validation
-                 └── TBtools-II Ka/Ks calculation
-```
+<p align="center">
+  <img src="assets/workflow-overview.png" alt="共线性分析与 Ka/Ks 分析流程图" width="100%" />
+</p>
 
 ## 运行环境
 
