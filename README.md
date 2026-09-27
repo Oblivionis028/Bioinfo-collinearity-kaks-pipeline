@@ -26,9 +26,9 @@
 
 ## 环境与依赖
 
-推荐在Linux、macOS或Windows Subsystem for Linux（WSL）中运行命令行步骤。Python脚本仅使用标准库，不需要额外安装Python包。必需软件为Python 3、[DIAMOND](https://github.com/bbuchfink/diamond)和[TBtools-II](https://github.com/CJ-Chen/TBtools-II)；如需从基因组FASTA和GFF/GFF3生成CDS，可使用[gffread](https://github.com/gpertea/gffread)；如需直接运行命令行共线性分析，可使用[MCScanX](https://github.com/wyp1125/MCScanX)。
+推荐使用Linux/WSL完成完整命令行流程；Windows原生环境也可运行本仓库Python脚本、DIAMOND Windows程序及TBtools-II图形界面，但MCScanX封装是否可用取决于TBtools-II Windows版本。若需从基因组FASTA和GFF/GFF3生成CDS，推荐在Linux/WSL中使用[gffread](https://github.com/gpertea/gffread)。Python脚本仅使用标准库，不需要额外安装Python包。必需软件为Python 3、[DIAMOND](https://github.com/bbuchfink/diamond)和[TBtools-II](https://github.com/CJ-Chen/TBtools-II)；完整安装说明和两套逐步操作路线见[操作文档](docs/workflow.zh-CN.md)。
 
-安装后可检查：
+以下是Linux/WSL中的Bash检查命令；Windows原生PowerShell检查方式见[操作文档第15节](docs/workflow.zh-CN.md#十五windows原生环境powershell操作路线)：
 
 ```bash
 python3 --version
